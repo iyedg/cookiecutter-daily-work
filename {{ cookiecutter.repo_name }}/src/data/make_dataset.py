@@ -6,11 +6,11 @@ from dotenv import find_dotenv, load_dotenv
 
 
 @click.command()
-def main():
+def make():
     """ Runs data processing scripts to turn raw data from (../raw) into
         cleaned data ready to be analyzed (saved in ../processed).
     """
-    pass
+    logger.info("Nothing implemented yet")
 
 
 if __name__ == '__main__':
@@ -21,4 +21,4 @@ if __name__ == '__main__':
     # load up the .env entries as environment variables
     load_dotenv(find_dotenv())
 
-    main()
+    make()
